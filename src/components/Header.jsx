@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 import { Globe } from 'lucide-react'
-import { DISARGEN_LOGO_SMALL_DATA_URL } from '../assets/logos'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -22,7 +21,7 @@ const Header = () => {
         <a className="logo" href="#home" aria-label="DISARGEN Oil Services C.A.">
           <img
             className="logo-image"
-            src={DISARGEN_LOGO_SMALL_DATA_URL}
+            src={`${import.meta.env.BASE_URL}disargen-logo.png`}
             alt="DISARGEN Oil Services C.A."
           />
         </a>

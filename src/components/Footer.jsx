@@ -1,6 +1,8 @@
 import React from 'react'
 import { useLanguage } from '../context/LanguageContext'
 
+const logoSrc = `${import.meta.env.BASE_URL}Logo%20Disargen%202.png`
+
 const Footer = () => {
   const { t } = useLanguage()
 
@@ -13,8 +15,13 @@ const Footer = () => {
             <a className="logo logo-footer" href="#home" aria-label="DISARGEN Oil Services C.A.">
               <img
                 className="logo-image logo-image-footer"
-                src={`${import.meta.env.BASE_URL}Logo%20Disargen%202.png`}
+                src={logoSrc}
+                srcSet={`${logoSrc} 2x`}
+                sizes="(max-width: 640px) min(92vw, 380px), 580px"
+                width={2172}
+                height={724}
                 alt="DISARGEN Oil Services C.A."
+                decoding="async"
               />
             </a>
             <p className="footer-motto">

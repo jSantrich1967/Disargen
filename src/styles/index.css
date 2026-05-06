@@ -202,9 +202,9 @@ section {
 }
 
 .logo-image {
-  height: 58px;
+  height: 72px;
   width: auto;
-  max-width: 340px;
+  max-width: 520px;
   display: block;
   object-fit: contain;
   /* Avoid subpixel blur when the fixed header is composited */
@@ -218,7 +218,8 @@ section {
 }
 
 .logo-image-footer {
-  height: 64px;
+  height: 80px;
+  max-width: 580px;
 }
 
 .logo-main {
@@ -963,7 +964,12 @@ section {
   .header-actions-flex { gap: 1rem; }
   .values-grid { grid-template-columns: 1fr; }
   .logo-image {
-    height: 48px;
-    max-width: 280px;
+    height: 56px;
+    max-width: 360px;
+  }
+
+  .logo-image-footer {
+    height: 64px;
+    max-width: 380px;
   }
 }

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 import { Globe } from 'lucide-react'
 
+const logoSrc = `${import.meta.env.BASE_URL}Logo%20Disargen%202.png`
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const { language, toggleLanguage, t } = useLanguage()
@@ -21,8 +23,13 @@ const Header = () => {
         <a className="logo" href="#home" aria-label="DISARGEN Oil Services C.A.">
           <img
             className="logo-image"
-            src={`${import.meta.env.BASE_URL}Logo%20Disargen%202.png`}
+            src={logoSrc}
+            srcSet={`${logoSrc} 2x`}
+            sizes="(max-width: 640px) min(92vw, 360px), 520px"
+            width={2172}
+            height={724}
             alt="DISARGEN Oil Services C.A."
+            decoding="async"
           />
         </a>
         

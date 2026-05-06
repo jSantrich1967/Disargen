@@ -13,7 +13,7 @@ const Footer = () => {
             <a className="logo logo-footer" href="#home" aria-label="DISARGEN Oil Services C.A.">
               <img
                 className="logo-image logo-image-footer"
-                src={`${import.meta.env.BASE_URL}disargen-logo-gold.jpg`}
+                src={`${import.meta.env.BASE_URL}Logo%20Disargen%202.png`}
                 alt="DISARGEN Oil Services C.A."
               />
             </a>

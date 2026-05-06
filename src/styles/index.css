@@ -202,11 +202,15 @@ section {
 }
 
 .logo-image {
-  height: 52px;
+  height: 58px;
   width: auto;
-  max-width: 320px;
+  max-width: 340px;
   display: block;
   object-fit: contain;
+  /* Avoid subpixel blur when the fixed header is composited */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .logo-footer {
@@ -214,7 +218,7 @@ section {
 }
 
 .logo-image-footer {
-  height: 56px;
+  height: 64px;
 }
 
 .logo-main {
@@ -959,7 +963,7 @@ section {
   .header-actions-flex { gap: 1rem; }
   .values-grid { grid-template-columns: 1fr; }
   .logo-image {
-    height: 44px;
-    max-width: 260px;
+    height: 48px;
+    max-width: 280px;
   }
 }

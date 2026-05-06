@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLanguage } from '../context/LanguageContext'
+import { DISARGEN_LOGO_GOLD_DATA_URL } from '../assets/logos'
 
 const Footer = () => {
   const { t } = useLanguage()
@@ -9,10 +10,14 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-brand">
-            <div className="logo">
-              <span className="logo-main">DISARGEN</span>
-              <span className="logo-sub">OIL SERVICES C.A.</span>
-            </div>
+            {/* Company logo */}
+            <a className="logo logo-footer" href="#home" aria-label="DISARGEN Oil Services C.A.">
+              <img
+                className="logo-image logo-image-footer"
+                src={DISARGEN_LOGO_GOLD_DATA_URL}
+                alt="DISARGEN Oil Services C.A."
+              />
+            </a>
             <p className="footer-motto">
               {t('footer.motto')}
             </p>

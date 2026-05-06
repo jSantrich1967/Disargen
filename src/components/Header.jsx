@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 import { Globe } from 'lucide-react'
+import { DISARGEN_LOGO_GOLD_DATA_URL } from '../assets/logos'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -17,10 +18,14 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <div className="logo">
-          <span className="logo-main">DISARGEN</span>
-          <span className="logo-sub">OIL SERVICES C.A.</span>
-        </div>
+        {/* Company logo */}
+        <a className="logo" href="#home" aria-label="DISARGEN Oil Services C.A.">
+          <img
+            className="logo-image"
+            src={DISARGEN_LOGO_GOLD_DATA_URL}
+            alt="DISARGEN Oil Services C.A."
+          />
+        </a>
         
         <nav className="nav">
           <ul>

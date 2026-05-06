@@ -202,7 +202,7 @@ section {
 }
 
 .logo-image {
-  height: 42px;
+  height: 40px;
   width: auto;
   max-width: 220px;
   display: block;
@@ -959,7 +959,7 @@ section {
   .header-actions-flex { gap: 1rem; }
   .values-grid { grid-template-columns: 1fr; }
   .logo-image {
-    height: 34px;
-    max-width: 160px;
+    height: 32px;
+    max-width: 190px;
   }
 }

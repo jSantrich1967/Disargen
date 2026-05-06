@@ -198,6 +198,7 @@ section {
   display: flex;
   align-items: center;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 .logo-image {
@@ -954,6 +955,8 @@ section {
 }
 
 @media (max-width: 640px) {
+  .header { padding: 1rem 1rem; }
+  .header-actions-flex { gap: 1rem; }
   .values-grid { grid-template-columns: 1fr; }
   .logo-image {
     height: 34px;

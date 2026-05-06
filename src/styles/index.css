@@ -203,6 +203,7 @@ section {
 .logo-image {
   height: 42px;
   width: auto;
+  max-width: 220px;
   display: block;
   object-fit: contain;
 }
@@ -954,4 +955,8 @@ section {
 
 @media (max-width: 640px) {
   .values-grid { grid-template-columns: 1fr; }
+  .logo-image {
+    height: 34px;
+    max-width: 160px;
+  }
 }

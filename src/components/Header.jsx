@@ -21,7 +21,7 @@ const Header = () => {
         <a className="logo" href="#home" aria-label="DISARGEN Oil Services C.A.">
           <img
             className="logo-image"
-            src={`${import.meta.env.BASE_URL}disargen-logo-gold.jpg`}
+            src={`${import.meta.env.BASE_URL}disargen-logo-gold-transparent.png`}
             alt="DISARGEN Oil Services C.A."
           />
         </a>
